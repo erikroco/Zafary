@@ -45,7 +45,6 @@
   .formulario-login small {
     text-align: center;
     position: relative;
-    color: lightgray;
     right: 0px;
   }
   
@@ -64,15 +63,29 @@
     border: 1px solid #C3F1FF;
     height: 55px;
   }
-  
+
+  .msg-error{
+    color: red;
+    text-align: center;
+  }
+
+  .msg-love {
+    color: grey;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .visible {
+    display: block;
+  }
   
   /* Efecto al pasar encima el mouse */
   .formulario-login input[type="button"]:hover {
     cursor: pointer;
     background: #469F85;
-    
   }
-  
   
   /* Color de texto de ayuda */
   .formulario-login input::placeholder {
@@ -80,6 +93,5 @@
     color: #5AD2AE;
     opacity: 1;
     text-align: center;
-    color: darkturquoise;
-    
+    color: darkturquoise; 
   }

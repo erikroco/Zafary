@@ -4,24 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/da57a9aec2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles.css">
     <title>Layout</title>
 </head>
 <body>
-    <header class="cabecera-principal">BARRA DE HERRAMIENTAS</header>
+    <header class="cabecera-principal">Zafary</header>
     <section class="seccion-principal">
         <aside>
-            <ul>
-                <li><a href="/Layout/">Home</a></li>
-                <li><a href="/zpotify/">Zpotify</a></li>
-                <li><a href="/whatzApp/">WhatzApp</a></li>
-            </ul>
+            <section class="Home">
+                <i class="fas fa-home"></i> <a id="ir-home" href="/home/index.html" target="contenido-dinamico">Home</a>
+            </section>
+            <section class="WhatzApp">
+                <i class="fab fa-whatsapp"></i> <a id="ir-whatzapp" href="/whatzApp/" target="contenido-dinamico">WhatzApp</a>
+            </section>
+            <section class="Zpotify">
+                <i class="fab fa-spotify"></i>  <a id="ir-zpotify" href="/zpotify/" target="contenido-dinamico">Zpotify</a>
+            </section>   
         </aside>
         <main class="main-principal">
-            <header>SUB BARRA DE HERRAMIENTAS</header>
-            <section><iframe src="/../whatzApp/index.html" frameborder="0"></iframe></section>
+            <h3 id="nombre-pagina"></h3>       
+            <section>                
+                <iframe id="contenido-dinamico" class="contenido-dinamico" name="contenido-dinamico" src="" frameborder="0"></iframe>
+            </section>
         </main>
     </section>
-    <script type="text/javascript">_</script>
+    <script src="./index.js"></script>
 </body>
 </html>
